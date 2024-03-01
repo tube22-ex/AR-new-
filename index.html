@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="jp">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="mobile-web-app-capable" content="yes">
+  <script src="https://cdn.webrtc.ecl.ntt.com/skyway-4.4.5.js"></script>
+  <style>
+    *{
+      margin: 0;
+      padding: 0;
+    }
+  </style>
+  <link rel="stylesheet" href="style.css">
+  <title>AR</title>
+</head>
+<body>
+  <div id="canvasParent">
+    <div id="canvasDiv">
+      <canvas id="canvas" width="1920" height="1080"></canvas>
+    </div>
+  </div>
+    <div id="controlPanel">
+      <button id="UserMediaBtn">カメラ</button>
+      <button id="displayMediaBtn">画面共有VR</button>
+      <button id="btn00">画面共有</button><br>
+      <input id="ID"></input>
+      <button id="btn">接続</button>
+      <p id="shareID"></p>
+      </div>
+    <div id="videoArea">
+        <video id="video" class="videoElement" playsinline autoplay></video>
+        <video id="video2" class="videoElement" playsinline autoplay></video>
+        <video id="myV"></video>
+    </div>
+  <script src="script.js"></script>
+</body>
+</html>
